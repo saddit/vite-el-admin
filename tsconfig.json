@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "importHelpers": true,
+        "preserveConstEnums": true,
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators":true,
+        // "suppressImplicitAnyIndexErrors": true,
+        "sourceMap": false,
+        "skipLibCheck": true,
+        "allowJs": false,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"]
+        },
+        "lib": [
+            "DOM",
+            "ESNext"
+        ],
+        "outDir": "./dist/build",
+        "types": ["vite/client"],
+        "typeRoots": ["./node_modules/@types/*", "./types"],
+    },
+    "include": [
+        "src/**/*",
+        "./auto-imports.d.ts",
+        "./components.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "**/*.js",
+        "dist"
+    ]
+}
